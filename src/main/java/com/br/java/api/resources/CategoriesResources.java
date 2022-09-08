@@ -20,7 +20,6 @@ public class CategoriesResources {
         return categoriesRepository.findAll();
     }
 
-
     @PostMapping("/category")
     public Categories insertCategories(@RequestBody Categories category) {
         return categoriesRepository.save(category);
