@@ -2,12 +2,15 @@ package com.br.java.api.resources;
 
 import com.br.java.api.models.User;
 import com.br.java.api.repository.UserRepository;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value = "/api")
 @CrossOrigin(origins = "*")
+@Api(value = "Product API REST")
 public class UserResources {
 
     @Autowired
